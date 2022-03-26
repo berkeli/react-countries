@@ -20,6 +20,9 @@ export default function DisplayCountry({ countries, loading }:IDisplayCountry):J
       setNeighbours(countries.filter((c:Country) => c?.borders?.includes(countryData.alpha3Code)));
     }
   }, [countryData, countries]);
+  useEffect(() =>{
+    document.title = `${countryData?.name} - Country information and neighbours`
+  },[])
   return (
     <Box mt='8'>
       <Flex my='4'>

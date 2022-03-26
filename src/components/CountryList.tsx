@@ -25,6 +25,10 @@ export default function CountryList({ countries, loading } : { countries: Countr
   }, [countriesPaginated, countriesFiltered])
 
   useEffect(() =>{
+    document.title='Countries and their details'
+  }, [])
+
+  useEffect(() =>{
     setCountriesPaginated(countriesFiltered.slice(0, page * PER_PAGE + PER_PAGE));
   }, [page, countriesFiltered])
 
