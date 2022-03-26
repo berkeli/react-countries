@@ -22,7 +22,7 @@ export default function DisplayCountry({ countries, loading }:IDisplayCountry):J
   }, [countryData, countries]);
   useEffect(() =>{
     document.title = `${countryData?.name} - Country information and neighbours`
-  },[])
+  }, [])
   return (
     <Box mt='8'>
       <Flex my='4'>
