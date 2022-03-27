@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Text, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, useColorMode, useColorModeValue } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 export default function Header() {
