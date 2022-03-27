@@ -1,4 +1,5 @@
-import { Flex, Input, InputGroup, Select } from '@chakra-ui/react'
+import { Search2Icon } from '@chakra-ui/icons';
+import { Flex, Input, InputGroup, InputLeftElement, Select, useColorModeValue } from '@chakra-ui/react'
 import { REGIONS } from '../constants';
 
 interface ISearch {
@@ -17,10 +18,11 @@ export default function SearchAndFilter({ searchQuery, setSearchQuery, region, s
   }
   return (
         <Flex my='5' justifyContent='space-between'>
-            <InputGroup w='auto'>
-                <Input placeholder="Search for a country..." value={searchQuery} onChange={setSearchQueryHandler}/>        
+            <InputGroup w='auto' boxShadow='md'>
+                <InputLeftElement pointerEvents='none' children={<Search2Icon color={useColorModeValue('gray.300', 'gray.600')} />}/>
+                <Input placeholder="Search for a country..." value={searchQuery} onChange={setSearchQueryHandler} />        
             </InputGroup>
-            <Select name='region' onChange={setRegionHandler} w='auto' defaultValue={region}>
+            <Select aria-label="region" name='region' onChange={setRegionHandler} w='auto' defaultValue={region} boxShadow='md'>
                 <option value='all'>Filter by Region</option>
                 {REGIONS.map((rName: string) => <option key={rName} value={rName}>{rName}</option>)}
             </Select>

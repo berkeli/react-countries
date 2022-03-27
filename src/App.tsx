@@ -19,7 +19,7 @@ function App() {
   return (
       <Router>
         <Header />
-        <Box  px='8'>
+        <Box as='main' px='16'>
           <Routes>
             <Route path='/' element={<CountryList countries={countries} loading={loading}/>} />
             <Route path='/countries/:country' element={<DisplayCountry countries={countries} loading={loading}/>} />

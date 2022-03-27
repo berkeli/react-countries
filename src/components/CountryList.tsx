@@ -55,16 +55,18 @@ export default function CountryList({ countries, loading } : { countries: Countr
 
 const SingleCountry = forwardRef(({ country } : { country: Country }, ref:React.Ref<HTMLDivElement>): JSX.Element => {
   return (
-    <Box maxW='sm' minW='sm' bg={useColorModeValue('gray.100', 'gray.900')} boxShadow='md' my='4' cursor='pointer' ref={ref}>
+    <Box maxW='sm' minW='sm' bg={useColorModeValue('gray.100', 'gray.900')} boxShadow='md' my='4' cursor='pointer' ref={ref} _hover={{
+      background: useColorModeValue('gray.200', 'gray.800'),
+    }}>
       <Link to={`/countries/${encodeURIComponent(country.name)}`}>
         <Image src={country.flag} alt={country.name} objectFit='cover' w='sm' h='12em'/>
         <Box p='4'>
-          <Heading as='h3' size='md'>
+          <Heading as='h2' size='md'>
             {country.name}
           </Heading>
-          <Heading as='h5' size='s'>Population: {numberWithCommas(country.population)}</Heading>
-          <Heading as='h5' size='s'>Region: {country.region}</Heading>
-          <Heading as='h5' size='s'>Capital: {country.capital}</Heading>
+          <Heading as='h3' size='s'>Population: {numberWithCommas(country.population)}</Heading>
+          <Heading as='h3' size='s'>Region: {country.region}</Heading>
+          <Heading as='h3' size='s'>Capital: {country.capital}</Heading>
         </Box>
       </Link>
     </Box>
