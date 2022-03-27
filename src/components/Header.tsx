@@ -8,7 +8,7 @@ export default function Header() {
             <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                 <Heading as='h1' size='md'> Where in the world? </Heading>
                 <Button onClick={toggleColorMode}>
-                    {colorMode !== 'light' ? <><SunIcon /><Text pl='2'>Light Mode</Text></> :  <> <MoonIcon /><Text pl='2'>Dark Mode</Text></>}
+                    {colorMode !== 'light' ? <><SunIcon mr='2'/>Light Mode</> :  <> <MoonIcon mr='2'/>Dark Mode</>}
                 </Button>
             </Flex>
         </Box>
