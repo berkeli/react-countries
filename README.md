@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/berkeli/cyf-react-challenges/tree/london-class-8/berkeli-halmyradov/challenge-countries)
-- Live Site URL: [Add live site URL here](https://cyf-berkeli-countries.netlify.com)
+- Solution URL: [GitHub](https://github.com/berkeli/cyf-react-challenges/tree/london-class-8/berkeli-halmyradov/challenge-countries)
+- Live Site URL: [Netlify Hosted](https://cyf-berkeli-countries.netlify.com)
 
 ## My process
 
@@ -51,4 +51,4 @@ Users should be able to:
 
 - GitHub - [@berkeli](https://www.github.com/berkeli)
 - Frontend Mentor - [@berkeli](https://www.frontendmentor.io/profile/berkeli)
-- LinkedIn - [@berkeli](https://www.linkedin.com/berkeli)
+- LinkedIn - [@berkeli](https://www.linkedin.com/in/berkeli)
